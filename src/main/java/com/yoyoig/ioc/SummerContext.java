@@ -33,7 +33,7 @@ public class SummerContext {
     private Map<String,Object> context = new HashMap<>(128);
 
     /**
-     * 配置
+     * 配置文件
      */
     private  Properties properties;
 
