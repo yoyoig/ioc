@@ -19,7 +19,7 @@ public class OneImpl implements One {
     @Inject
     private Three three;
 
-    @Value("{test")
+    @Value("{test}")
     private String test;
 
     @Override
