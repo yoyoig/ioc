@@ -103,8 +103,6 @@ public class SummerContext {
      * @return
      */
     public boolean isPrepareBeanContain(String beanName){
-        System.out.println(beanName);
-        System.out.println(prepareBean.stream().anyMatch( e -> StringUtils.equals(beanName,e.getBeanName())));
         return prepareBean.stream().anyMatch( e -> StringUtils.equals(beanName,e.getBeanName()));
     }
 
