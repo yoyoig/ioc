@@ -1,0 +1,48 @@
+注解
+    bean 检测bean放到IOC容器中
+    inject 需要注入Bean的field
+    value 需要植入配置的field
+
+扫描器
+    扫描该路径下所以类,并放入到IOC容器中
+
+配置文件解析: 将所有配置取出
+    properties文件
+    xml文件
+    yml文件
+
+注入器:
+    注入bean
+    注入value
+
+IOC容器
+    向容器中注入bean
+    通过beanName获取bean
+    通过类型(父接口)获取bean(子实现唯一时)
+
+基本对象:
+    beanDefine class,beanName(默认为类名,可以用户指定值)
+
+在创建对象时:
+    注入属性对象,但是IOC容器中,还没有全部注入,所以存在问题
+
+    先获取Bean的名称,类型,以及父类型.-> classDefine
+
+    首先获取classDefines ,包括className,clazz,class的父类型.
+
+    创建对象时,对于需要注入的属性,
+        首先从IOC容器中获取,如果存在,则IOC容器中获取.
+            通过value获取:
+                通过查询className;
+                    存在: IOC容器中获取
+                    不存在:从 classDefines 中查询出 className
+                        创建class;放入到IOC容器中.
+            通过类型获取:
+                通过查询类型:
+                    存在且唯一:IOC容器获取
+                    存在不唯一:报错
+                    不存在:
+
+
+
+
