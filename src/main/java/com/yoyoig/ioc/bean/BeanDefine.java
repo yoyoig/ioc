@@ -7,7 +7,7 @@ import lombok.Data;
  * @author mingke.yan@hand-china.com
  * @version 1.0
  * @name
- * @description
+ * @description 已经实例化的类信息
  * @date 2018/4/26
  */
 @Data

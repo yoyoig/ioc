@@ -9,7 +9,7 @@ import java.util.List;
  * @author mingke.yan@hand-china.com
  * @version 1.0
  * @name
- * @description
+ * @description 准备实例化的类信息
  * @date 2018/4/26
  */
 @Data
